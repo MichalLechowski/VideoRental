@@ -1,0 +1,123 @@
+/* Body layout */
+main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif
+}
+
+body {
+    background-image: url("image\\background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-x: 50%; */
+}
+
+/* Navbar  */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+    nav a {
+        padding: 7px 25px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    nav div {
+        padding: 10px;
+        margin: 5px;
+        width: 277px;
+    }
+
+    nav li {
+        display: flex;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    border-radius: 7px;
+    width: 80px;
+    height: 30px;
+    transition-duration: 0.6s;
+    text-decoration: none;
+    font-family: inherit;
+    text-align: center;
+}
+
+
+nav li a:hover {
+    background: #f08dfb;
+    border-radius: 20px;
+}
+
+
+#logoscale {
+    width: 50%;
+    height: 100%;
+}
+
+#About p {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#About h3 {
+    margin: 10px;
+}
+
+#Contact {
+    text-align: center;
+    font-size: 20px;
+}
+
+#Contact p {
+        margin: 10px;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+}
+
+
+/* Sections  */
+.MainContent {
+    background: grey;
+    opacity: 0.8;
+    width: 80%;
+    /*padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 10px;*/
+}
+
+/* Animations */
+.animate-zoom {
+    animation: animatezoom 0.9s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
