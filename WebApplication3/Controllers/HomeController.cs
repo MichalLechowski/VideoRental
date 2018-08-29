@@ -11,7 +11,7 @@ namespace WebApplication3.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home";
-            return View();
+            return View("Index");
         }
 
         public ActionResult About()
