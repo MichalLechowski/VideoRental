@@ -157,17 +157,28 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\VideoRentalContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\VideoRentalController.cs" />
+    <Compile Include="Controllers\KlienciController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Aktorzy.cs" />
     <Compile Include="Models\Cennik.cs" />
+    <Compile Include="Models\DTO\AktorzyDto.cs" />
+    <Compile Include="Models\DTO\CennikDto.cs" />
+    <Compile Include="Models\DTO\FilmyAktorzyDto.cs" />
+    <Compile Include="Models\DTO\FilmyDto.cs" />
+    <Compile Include="Models\DTO\GatunkiDto.cs" />
+    <Compile Include="Models\DTO\KlienciDto.cs" />
+    <Compile Include="Models\DTO\PlytyDto.cs" />
+    <Compile Include="Models\DTO\RodzajeRolDto.cs" />
+    <Compile Include="Models\DTO\WypozyczeniaDto.cs" />
     <Compile Include="Models\Filmy.cs" />
     <Compile Include="Models\FilmyAktorzy.cs" />
     <Compile Include="Models\Gatunki.cs" />
     <Compile Include="Models\Klienci.cs" />
     <Compile Include="Models\Plyty.cs" />
+    <Compile Include="Models\Repo\ICrudRepository.cs" />
+    <Compile Include="Models\Repo\KlientRepository.cs" />
     <Compile Include="Models\RodzajeRol.cs" />
     <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\Wypozyczenia.cs" />
@@ -216,8 +227,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\VideoRental\Index.cshtml" />
-    <Content Include="Views\VideoRental\Create.cshtml" />
+    <Content Include="Views\Klienci\Details.cshtml" />
+    <Content Include="Views\Klienci\Index.cshtml" />
+    <Content Include="Views\Klienci\Edit.cshtml" />
+    <Content Include="Views\Klienci\Create.cshtml" />
+    <Content Include="Views\Klienci\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

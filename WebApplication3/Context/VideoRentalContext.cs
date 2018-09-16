@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using WebApplication3.Models;
+using WebAppVideoRental.Models;
 
-namespace WebApplication3.Context
+namespace WebAppVideoRental.Context
 {
     public class VideoRentalContext : DbContext
     {
@@ -23,6 +23,8 @@ namespace WebApplication3.Context
         public DbSet<Plyty> Plyty { get; set; }
         public DbSet<RodzajeRol> RodzajeRol { get; set; }
         public DbSet<Wypozyczenia> Wypozyczenia { get; set; }
+
+        public System.Data.Entity.DbSet<WebAppVideoRental.Models.DTO.KlienciDto> KlienciDtoes { get; set; }
 
 
         //protected override void OnModelCreating(DbModelBuilder modelBuilder)

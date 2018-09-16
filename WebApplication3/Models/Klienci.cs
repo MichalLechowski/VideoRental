@@ -1,4 +1,4 @@
-namespace WebApplication3.Models
+namespace WebAppVideoRental.Models
 {
     using System;
     using System.Collections.Generic;
@@ -50,6 +50,9 @@ namespace WebApplication3.Models
         [StringLength(50)]
         [DataType(DataType.Password)]
         public string Haslo { get; set; }
+
+        [Required]
+        public bool czyPracownik { get; set; } = false;
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Wypozyczenia> Wypozyczenia { get; set; }
