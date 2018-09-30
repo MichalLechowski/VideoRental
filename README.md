@@ -7,3 +7,4 @@
 ### 4. Map designed database to Entity Framework
 ### 5. Create proper views and provide data manipulation for users based on account types (employee, client)
 ### 6. Implement Adapter design pattern for database based on DTO objects as adapters
+### 7. Implement user login system
